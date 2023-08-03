@@ -6,7 +6,6 @@
    Intent intent = new Intent(content,Aactivity.class);
   BundleDataHandleUtils.initParamToIntent(intent,map);
   content.startActivity(intent);
- 
 
  /*
  *取出参数
