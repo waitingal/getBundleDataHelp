@@ -1,12 +1,17 @@
-设置传参：
-ArrayMap<String,Object> map = new ArrayMap<>();
-map.put("name","value");
-Intent intent = new Intent(content,Aactivity.class);
-BundleDataHandleUtils.initParamToIntent(intent,map);
-content.startActivity(intent);
+  /*
+  *设置传参
+  */
+   ArrayMap<String,Object> map = new ArrayMap<>();
+   map.put("","");
+   Intent intent = new Intent(content,Aactivity.class);
+  BundleDataHandleUtils.initParamToIntent(intent,map);
+  content.startActivity(intent);
+ 
 
-取出参数：
-public class Aactivity extends Activity{
+ /*
+ *取出参数
+ */
+  Aactivity extends Activity{
       @ParamData(paramName = "int")
       int testInt;
       @ParamData(paramName = "String")
@@ -31,8 +36,8 @@ public class Aactivity extends Activity{
      private void getInteneData(){
          BundleDataHandleUtils.getIntentData(this, getIntent());
      }
-}
-
+  }
+ 
     AFragment extends Fragment{
          @ParamData(paramName = "int")
         int testInt;
