@@ -46,7 +46,7 @@
 
       public Param(Bundle bundle){
   
-        BundleDataHandleUtils.getBundleData(bundle)
+        BundleDataHandleUtils.getBundleData(this,bundle)
   
     }
 
