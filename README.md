@@ -1,4 +1,4 @@
-使用注解方式从Bundle中获取数据
+从Bundle中获取数据的工具
 
   ParamData注解
 
